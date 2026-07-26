@@ -1,4 +1,16 @@
 aid: fasturn
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fasturn.png
 name: Fasturn
 description: Fasturn is a company surfaced as a portfolio company of battery-ventures and added to the
   API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
@@ -11,7 +23,20 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+x-enrichment:
+  last_run: '2026-07-19'
+  status: no-live-surface
+  note: fasturn.com apex is a parked IONOS placeholder (HTTP 200 redirect to
+    defaultsite, IONOS SPF); fasturn.io does not resolve; no api/developer/docs
+    subdomains resolve. No live website, API, docs, or OpenAPI to search or derive
+    from, so no artifacts were produced. Company appears dormant/defunct.
+  probed:
+  - {host: fasturn.com, dns: 74.208.236.150, http_status: 200, disposition: parked-ionos}
+  - {host: fasturn.io, dns: NXDOMAIN}
+  - {host: api.fasturn.com, dns: NXDOMAIN}
+  - {host: developer.fasturn.com, dns: NXDOMAIN}
+  - {host: docs.fasturn.com, dns: NXDOMAIN}
 tags:
 - Company
 apis: []
